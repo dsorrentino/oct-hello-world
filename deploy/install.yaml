@@ -95,3 +95,24 @@ spec:
       namespace: oct-hello-world
       port: 9443
       basePath: /
+---
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: oct-hello-world
+  namespace: oct-hello-world
+  labels:
+    app.kubernetes.io/part-of: oct-hello-world
+spec:
+  # The console plugin's static files: only the console loads them.
+  podSelector:
+    matchLabels:
+      app: oct-hello-world
+  policyTypes: [Ingress]
+  ingress:
+    - from:
+        - namespaceSelector:
+            matchLabels:
+              kubernetes.io/metadata.name: openshift-console
+      ports:
+        - { protocol: TCP, port: 9443 }
