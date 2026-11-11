@@ -3,7 +3,7 @@
 > **Community project. Not officially supported by Red Hat.**
 
 A minimal Hello World template for building
-[OpenShift Community Tools](https://github.com/OOsemka) console extensions.
+[OpenShift Community Tools](https://github.com/openshift-community-tools) console extensions.
 Fork this repo to create your own OCT module.
 
 ## What it does
@@ -17,7 +17,7 @@ Fork this repo to create your own OCT module.
 
 ```bash
 # Clone and install
-git clone https://github.com/OOsemka/oct-hello-world.git
+git clone https://github.com/openshift-community-tools/oct-hello-world.git
 cd oct-hello-world
 yarn install
 
@@ -25,7 +25,7 @@ yarn install
 yarn build
 
 # Build the container image
-podman build -t quay.io/cjanisze/oct-hello-world:1.0.0-ocp4.22 -f Containerfile .
+podman build -t quay.io/openshift-community-tools/oct-hello-world:1.0.0-ocp4.22 -f Containerfile .
 ```
 
 ## Deploy to OpenShift

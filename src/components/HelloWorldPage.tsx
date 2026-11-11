@@ -97,7 +97,7 @@ const HelloWorldPage: FC = () => {
                       variant="link"
                       isInline
                       component="a"
-                      href="https://github.com/OOsemka/oct-hello-world"
+                      href="https://github.com/openshift-community-tools/oct-hello-world"
                       target="_blank"
                       rel="noopener noreferrer"
                       icon={<ExternalLinkAltIcon />}

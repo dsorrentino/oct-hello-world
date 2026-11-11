@@ -9,7 +9,7 @@ This repository is the **Hello World** ConsolePlugin — a minimal template and 
 | | Value |
 | --- | --- |
 | Plugin ID / ConsolePlugin / `package.json` `consolePlugin.name` | **`oct-hello-world`** |
-| Image | `quay.io/cjanisze/oct-hello-world:1.0.0-ocp4.22` (`<semver>-ocp<major.minor>`) |
+| Image | `quay.io/openshift-community-tools/oct-hello-world:1.0.0-ocp4.22` (`<semver>-ocp<major.minor>`) |
 | i18n | `plugin__oct-hello-world` |
 | Route | `/community-tools/management/hello-world` |
 
