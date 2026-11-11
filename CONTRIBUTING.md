@@ -40,7 +40,7 @@ oc set image deploy/oct-hello-world -n oct-hello-world plugin=quay.io/<you>/oct-
 **Otherwise** deploy the YAML in this repo with your image:
 
 ```bash
-sed 's|quay.io/cjanisze/oct-hello-world:[^ ]*|quay.io/<you>/oct-hello-world:dev|' deploy/install.yaml | oc apply -f -
+sed 's|quay.io/openshift-community-tools/oct-hello-world:[^ ]*|quay.io/<you>/oct-hello-world:dev|' deploy/install.yaml | oc apply -f -
 ```
 
 and enable the plugin in the console (skip if the storefront already enabled it):
