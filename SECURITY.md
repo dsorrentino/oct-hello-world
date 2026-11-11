@@ -10,4 +10,4 @@ Maintainers aim to acknowledge reports within a few working days and to coordina
 
 ## Scope
 
-This extension and its images. How OCT handles permissions, backends and installs is described in [the storefront security model](https://github.com/OOsemka/oct-storefront/blob/main/docs/security-model.md).
+This extension and its images. How OCT handles permissions, backends and installs is described in [the storefront security model](https://github.com/openshift-community-tools/oct-storefront/blob/main/docs/security-model.md).
